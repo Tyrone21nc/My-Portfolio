@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #b5e7a0;
+    --secondary-color: #82b74b;
+    --bg-color: #2d3344;
+    --bg-color-links: #507826;
+    /* --bg-color: #12231c; */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition-duration: 200ms;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 14px;
+}
+
+a:hover {
+    opacity: 0.7;
+    background-color: var(--bg-color-links);
+    color: var(--bg-color);
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 4px;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.bigText:hover{
+    font-size: 25px;
+    transition-duration: 500ms;
+}
+
+.darkerText {
+    color: var(--secondary-color);
+}
+
+.lighterText {
+    color: var(--primary-color);
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+p {
+    font-size: 1.05em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+nav {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main, section, .mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+main {    
+    /* border: 5px solid crimson; */
+    gap: 64px; /* space between email me and projects */
+}
+
+section {
+    gap:32px; /* space between I write code... and profile image */
+}
+
+.nameContainer {
+    gap: 8px;
+}
+
+.statsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.imgContainer {
+    border-radius: 100%;
+    max-width: 150px;
+    overflow: hidden;
+}
+
+
+.imgContainer img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.stats>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stats div i {
+    font-size: 1.4em;
+}
+
+.stats div div {
+    display: grid;
+    place-items: center;
+    min-width: 40px;
+}
+
+.aboutMe {
+    line-height: 1.5em;
+}
+
+.outreach {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    width: fit-content;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.outreach:hover {
+    opacity: 0.7;
+}
+
+.outreach i {
+    transform: rotate(-45deg);
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.headerText {
+    margin-bottom: 24px;
+}
+
+.projectItem div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projectItem>div:last-child {
+    aspect-ratio: 16/9;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+/****************************/
+.projectItem>div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* might have to change from contain to cover later */
+}
+/***************************/
+
+.projectItem {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.linkItem {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 3px !important;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    /* background-image: url(https://media1.giphy.com/media/326d5iOUoYY8N6uFPm/giphy.gif?cid=6c09b952u2vhzqqc9uztro7e02sranunad88oy3v3m9cqqlp&ep=v1_gifs_search&rid=giphy.gif&ct=g); */
+}
+
+.linkItem:hover {
+    opacity: 0.7;
+}
+
+.linkItem p {
+    font-size: 0.9em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (min-width: 640px){
+    .statsContainer {
+        flex-direction: row;
+    }
+    .stats {
+        gap: 0px;
+    }
+    .aboutMe {
+        max-width: 80%;
+        margin-right: auto;
+    }
+}
+

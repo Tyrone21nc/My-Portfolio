@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9fa9a3;
+}
+header {
+    background-color:  #034f84;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    gap: 550px;
+    justify-content: center;
+}
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+header div{
+    display: flex;
+}
+.top-section a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    justify-content: center;
+}
+.top-section a:hover {
+    background-color: #f7cac9;
+    color: black;
+    border-radius: 10px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #92a8d1;
+}
+section {
+    padding: 20px 0 0 20px;
+}
+.about, .portfolio, .contact {
+    background-color: #92a8d1;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #f7786b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about:hover {
+    background-color: #f7cac9;
+}
+.portfolio:hover {
+    background-color: #f7cac9;
+}
+.contact:hover {
+    background-color: #f7cac9;
+}
+.portfolio-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+footer {
+    background-color:  #034f84;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #f7786b;
+    opacity: 1;
+}
